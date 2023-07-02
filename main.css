@@ -1,29 +1,174 @@
 /* When using a mobile-first approach, base CSS styles are for small screen layout */
 
+html,
 body {
-
-
-
-    /* background image*/
-
-    background-image: url('images/logo2.jpg');
     height: 100%;
-    margin: 0 auto;
-    opacity: 0.8;
-    background-size: cover;
+    margin: 0;
+}
 
+.container {
+    position: relative;
+    height: 100%;
+    background-color: #e3e1e102;
+    /* Set a light background color */
+    display: block;
 
 }
+
+.left-bg,
+.center-bg,
+.right-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.left-bg {
+    left: 0;
+    width: 33.33%;
+    background-image: url('images/bg.jpg');
+    z-index: -1;
+    opacity: 0.9;
+    /* Adjust the opacity value  */
+}
+
+.center-bg {
+    left: 33.33%;
+    width: 33.33%;
+    background-image: url('images/bg1.jpg');
+    z-index: -1;
+    opacity: 0.9;
+    /* Adjust the opacity value  */
+}
+
+.right-bg {
+    left: 66.66%;
+    width: 33.33%;
+    background-image: url('images/logo2.jpg');
+    z-index: -1;
+    opacity: 0.8;
+    /* Adjust the opacity value  */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* Adjust the height of the header image as needed */
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.logo {
+    max-width: 350px;
+    /* Define the maximum width of the logo image */
+    max-height: 150px;
+    /* Define the maximum height of the logo image */
+    display: block;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
 
 h1 {
-    width: 500px;
+
+    margin-top: 15px;
     text-align: center;
     font-size: 15px;
+    font-family: cursive;
+    color: #000;
+
+
+
+}
+
+h4 {
+
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: cursive;
+    color: #000;
+
+
+
+}
+
+.Main_Contain {
+    color: black;
+    position: relative;
+    height: 100%;
+    display: block;
+}
+
+.Main_Contain h1,
+h4 {
+    color: #333333;
+    /* Set the font color for h1 */
+}
+
+.para {
+    display: flex;
+    width: 100%;
+}
+
+.section {
+    flex-grow: 1;
+    padding: 20px;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 33.33%;
+
+
+}
+
+.section p {
+    font-size: 28px;
+    /* Adjust the font size as desired */
+    font-family: cursive;
+    color: #000;
+
+}
+
+.link {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust the distance from the bottom as desired */
+    left: 20px;
+    /* Adjust the distance from the left as desired */
+    color: white;
+    font-size: 18px;
+    /* Adjust the font size as desired */
+}
+
+.link a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.Images {
     display: flex;
     justify-content: center;
-    position: relative;
+    margin-top: 20px;
+}
 
-
+.Images img {
+    width: 25%; /* Set the width as a percentage for medium size */
+      height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
+    margin: 0 10px;
 }
 
 
@@ -33,96 +178,89 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:900px) {
+/* @media screen and (min-width:900px) {
 
 
     header {
-        width: 100%;
-        text-align: center;
-        display: inline;
+        max-width: 200px; /* Define the maximum width of the logo image */
+max-height: 100px;
+/* Define the maximum height of the logo image */
+display: block;
+text-align: center;
+display: inline;
 
-    }
-
-    .logo {
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav {
-        width: 35%;
-        float: right;
-    }
-
-    nav li {
-        display: inline;
-        margin: 0 15px;
-        position: relative;
-        color: white;
+}
 
 
-    }
+.logo {
+    display: block;
+    margin: 0 auto;
+}
 
-    nav ul {
-        /* float: left; */
-        padding: 5px;
+nav {
+    width: 35%;
+    float: right;
+}
 
-    }
+nav li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+    color: white;
 
-    nav a {
-        color: #ffffff;
-        font: bold 20px Tahoma;
-    }
 
-    h1 {
-        width: 50%;
-        margin: 0 auto;
-        font-size: 3.5em;
-        color: #ffffff;
+}
 
-    }
+nav ul {
+    /* float: left; */
+    padding: 5px;
 
-    .section1 {
-        color: #ffffff;
-        font-size: 3em;
-        display: inline;
-    }
+}
 
-    .section2 {
-        color: #ffffff;
-        font-size: 3em;
-        display: inline;
-    }
+nav a {
+    color: #ffffff;
+    font: bold 20px Tahoma;
+}
 
-    .section3 {
-        color: #ffffff;
-        font-size: 3em;
-        display: block;
-    }
+h1 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3.5em;
+    color: #ffffff;
 
-    p {
-        width: 100%;
-        display: inline;
-        font-size: medium;
-    }
+}
 
-    footer {
-        color: #ffffff;
-    }
-    a{
-        color: #ffffff;
-    }
+.section1 {
+    color: #ffffff;
+    font-size: 3em;
+    display: inline;
+}
+
+.section2 {
+    color: #ffffff;
+    font-size: 3em;
+    display: inline;
+}
+
+.section3 {
+    color: #ffffff;
+    font-size: 3em;
+    display: block;
+}
+
+p {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+footer {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
 
 
 
@@ -149,3 +287,5 @@ h1 {
 
 
 }
+
+*/
