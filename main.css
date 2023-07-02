@@ -1,0 +1,151 @@
+/* When using a mobile-first approach, base CSS styles are for small screen layout */
+
+body {
+
+
+
+    /* background image*/
+
+    background-image: url('images/logo2.jpg');
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+    background-size: cover;
+
+
+}
+
+h1 {
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) {
+
+
+    header {
+        width: 100%;
+        text-align: center;
+        display: inline;
+
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 35%;
+        float: right;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 15px;
+        position: relative;
+        color: white;
+
+
+    }
+
+    nav ul {
+        /* float: left; */
+        padding: 5px;
+
+    }
+
+    nav a {
+        color: #ffffff;
+        font: bold 20px Tahoma;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 3.5em;
+        color: #ffffff;
+
+    }
+
+    .section1 {
+        color: #ffffff;
+        font-size: 3em;
+        display: inline;
+    }
+
+    .section2 {
+        color: #ffffff;
+        font-size: 3em;
+        display: inline;
+    }
+
+    .section3 {
+        color: #ffffff;
+        font-size: 3em;
+        display: block;
+    }
+
+    p {
+        width: 100%;
+        display: inline;
+        font-size: medium;
+    }
+
+    footer {
+        color: #ffffff;
+    }
+    a{
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
