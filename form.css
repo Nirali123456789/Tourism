@@ -26,7 +26,6 @@ body {
   background: #fff; }
 
 .signup-form {
-  width: 50%; 
   float: right;
 }
 
@@ -193,20 +192,28 @@ select {
 
 
     .main {
+     
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      float: right;
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+    .main-form {
+     
       background-image: url("images/bg.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      min-height: 150vh;
+  
+    
     }
 
     .container {
-      width: 80%;
-      background: rgba(220, 218, 218, 0.402);
-      float: right;
+      background: rgba(220, 218, 218, 0.77);
+      float: inline-start;
     }
 
 

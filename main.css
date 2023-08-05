@@ -18,7 +18,7 @@ body {
 .container-middle {
     display: inline-block;
     vertical-align: top;
-  }
+}
 
 .left-bg,
 .center-bg,
@@ -40,6 +40,16 @@ body {
     /* Adjust the opacity value  */
 }
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
 .center-bg {
     left: 33.33%;
     width: 33.33%;
@@ -124,23 +134,7 @@ h4 {
 
 
 
-.section {
-    flex-grow: 1;
-    padding: 20px;
-    color: #ffffff;
-    box-sizing: border-box;
-    width: 33.33%;
 
-
-}
-
-.section p {
-    font-size: 28px;
-    /* Adjust the font size as desired */
-    font-family: cursive;
-    color: #000;
-
-}
 
 .link {
     position: absolute;
@@ -236,15 +230,12 @@ h1 {
     position: relative;
     text-align: center;
     padding: 30px;
-    text-align: left; 
-    display: inline-block;
+    text-align: left;
+    display: inline;
     vertical-align: top;
 }
 
-#MiddleSection h1 {
-    color: #000000;
-    font-weight: bold;
-}
+
 
 #middle_img {
     margin: 25px 15px;
@@ -253,20 +244,98 @@ h1 {
     border-radius: 10px;
     opacity: 0.7;
 }
-.h4middle
-{
-    text-align: left; 
-}
-.side-section {
+
+.container-middle {
+    width: 100%;
     display: flex;
-  }
-  .section img
-  {
-    width: 10%;
-  }
-h3{
-    color: #000;
 }
+
+.h4middle {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.side-section {
+    display: inline;
+    
+}
+.merger
+{
+ display: flex;
+}
+
+
+.section {
+
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    color: #0d0d0d;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section p {
+    color: #090707;
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 10px;
+}
+
+
+.section img {
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+ h3{
+    margin: 10px 10px; 
+  }
+  p{
+    margin: 10px 10px; 
+  }
+  .text-container {
+   display: block;
+   width: 80%;
+  }
+  #date
+  {
+    font-size: 12px;
+    color: #bbbdbe;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+aside {
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    background-color:#F1F7FB;
+}
+.section:hover .text-container{
+    background-color: #809bf5; /* Change this to the desired background color on hover */
+    color: #fff; /* Change this to the desired text color on hover */
+    cursor: pointer;
+  }
+ .text-overlay-bottom
+ {
+    margin: 20px;
+ }
+ .text-overlay-bottom p{
+    width: 650px ;
+    font-size: 15px;
+    margin-left: 20px;
+
+ }
+ .text-overlay-bottom h2{
+    margin-left: 20px;
+ }
 
 
 
