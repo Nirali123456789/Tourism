@@ -173,6 +173,10 @@ select {
   #submit:hover {
     background-color: #cd5300; }
 
+    .req {
+      color: red;
+  }
+
 @media screen and (max-width: 992px) {
   .container {
     width: 65%;

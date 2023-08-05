@@ -1,5 +1,7 @@
 /* When using a mobile-first approach, base CSS styles are for small screen layout */
 
+
+
 html,
 body {
     height: 100%;
@@ -10,8 +12,7 @@ body {
     position: relative;
     height: 100%;
     background-color: #e3e1e102;
-    /* Set a light background color */
-    display: block;
+
 
 }
 
@@ -28,7 +29,6 @@ body {
     bottom: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 1;
 }
 
 .left-bg {
@@ -37,19 +37,15 @@ body {
     background-image: url('images/bg.jpg');
     z-index: -1;
     opacity: 0.9;
+
     /* Adjust the opacity value  */
 }
 
+.left-bg:hover {}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
 .center-bg {
     left: 33.33%;
     width: 33.33%;
@@ -68,17 +64,18 @@ body {
     /* Adjust the opacity value  */
 }
 
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
-    /* Adjust the height of the header image as needed */
     background-image: url('images/logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
+
 }
 
 .logo {
@@ -91,6 +88,7 @@ body {
     display: block;
     margin: 0 auto;
 
+
 }
 
 
@@ -101,6 +99,7 @@ h1 {
     font-size: 10px;
     font-family: fantasy;
     color: #000;
+    transition: transform 3s ease;
 
 
 
@@ -110,9 +109,10 @@ h4 {
 
     margin-top: 15px;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: cursive;
     color: #000;
+    transition: transform 2s ease;
 
 
 
@@ -129,7 +129,6 @@ h4 {
 .Main_Contain h1,
 h4 {
     color: #333333;
-    /* Set the font color for h1 */
 }
 
 
@@ -167,12 +166,20 @@ h4 {
     object-fit: cover;
     margin: 0 10px;
     border-radius: 20px;
+
+}
+
+.Images img:hover {
+
+    filter: grayscale(100%);
+    /* Convert the image to grayscale on hover */
 }
 
 .para {
     display: flex;
     justify-content: center;
     margin: 20px 10px;
+
 }
 
 .para p {
@@ -220,7 +227,12 @@ h1 {
     color: #000;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInAnimation 3s ease-in-out forwards;
+}
+
+h1:hover {
+    transform: scale(0.5);
 }
 
 #MiddleSection {
@@ -243,6 +255,13 @@ h1 {
     height: fit-content;
     border-radius: 10px;
     opacity: 0.7;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#middle_img:hover {
+    transform: scale(0.8);
+
 }
 
 .container-middle {
@@ -253,17 +272,40 @@ h1 {
 .h4middle {
     text-align: left;
     margin-left: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 .side-section {
     display: inline;
-    
-}
-.merger
-{
- display: flex;
+
 }
 
+.merger {
+    display: flex;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .section {
 
@@ -273,6 +315,8 @@ h1 {
     color: #0d0d0d;
     box-sizing: border-box;
     position: relative;
+    animation-duration: 10s;
+    animation-name: slidein;
 }
 
 .section p {
@@ -280,7 +324,7 @@ h1 {
     font-weight: bold;
     width: 100%;
     font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 10px;
 }
 
@@ -292,22 +336,28 @@ h1 {
     margin: 0;
 }
 
- h3{
-    margin: 10px 10px; 
-  }
-  p{
-    margin: 10px 10px; 
-  }
-  .text-container {
-   display: block;
-   width: 80%;
-  }
-  #date
-  {
+h3 {
+    margin: 10px 10px;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+p {
+    margin: 10px 10px;
+
+}
+
+.text-container {
+    display: block;
+    width: 80%;
+}
+
+#date {
     font-size: 12px;
     color: #bbbdbe;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
+
 aside {
     width: 80%;
     margin-top: 25px;
@@ -316,121 +366,48 @@ aside {
     border-radius: 10px;
     padding: 30px;
     display: flex;
-    background-color:#F1F7FB;
+    background-color: #F1F7FB;
 }
-.section:hover .text-container{
-    background-color: #809bf5; /* Change this to the desired background color on hover */
-    color: #fff; /* Change this to the desired text color on hover */
+
+.section:hover .text-container {
+    background-color: #809bf5;
+    color: #fff;
     cursor: pointer;
-  }
- .text-overlay-bottom
- {
+}
+
+.text-overlay-bottom {
     margin: 20px;
- }
- .text-overlay-bottom p{
-    width: 650px ;
+}
+
+.text-overlay-bottom p {
+    width: 650px;
     font-size: 15px;
     margin-left: 20px;
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
 
- }
- .text-overlay-bottom h2{
+
+}
+
+.text-overlay-bottom h2 {
     margin-left: 20px;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (min-width:900px) {
-
-
-    header {
-        max-width: 200px; /* Define the maximum width of the logo image */
-max-height: 100px;
-/* Define the maximum height of the logo image */
-display: block;
-text-align: center;
-display: inline;
-
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-}
-
-nav {
-    width: 35%;
-    float: right;
-}
-
-nav li {
-    display: inline;
-    margin: 0 15px;
-    position: relative;
-    color: white;
-
-
-}
-
-nav ul {
-    /* float: left; */
-    padding: 5px;
-
-}
-
-nav a {
-    color: #ffffff;
-    font: bold 20px Tahoma;
-}
-
-h1 {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 3.5em;
-    color: #ffffff;
-
-}
-
-.section1 {
-    color: #ffffff;
-    font-size: 3em;
-    display: inline;
-}
-
-.section2 {
-    color: #ffffff;
-    font-size: 3em;
-    display: inline;
-}
-
-.section3 {
-    color: #ffffff;
-    font-size: 3em;
-    display: block;
-}
-
-p {
-    width: 100%;
-    display: inline-block;
-    font-size: 0.8em;
+    to {
+        opacity: 1;
+    }
 }
 
 footer {
     color: #ffffff;
+    background-color: #000;
 }
 
 a {
@@ -451,16 +428,90 @@ a {
 
 
 
+@media screen and (min-width:900px) {
 
 
+    header {
+        max-width: 200px;
+        max-height: 100px;
+        display: block;
+        text-align: center;
+        display: inline;
+
+    }
 
 
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 35%;
+        float: right;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 15px;
+        position: relative;
+        color: white;
 
 
+    }
 
+    nav ul {
+        /* float: left; */
+        padding: 5px;
+        animation: fadeInAnimation 1s ease-in-out forwards;
 
+    }
+
+    nav a {
+        color: #ffffff;
+        font: bold 20px Tahoma;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 3.5em;
+        color: #ffffff;
+
+    }
+
+    .section1 {
+        color: #ffffff;
+        font-size: 3em;
+        display: inline;
+    }
+
+    .section2 {
+        color: #ffffff;
+        font-size: 3em;
+        display: inline;
+    }
+
+    .section3 {
+        color: #ffffff;
+        font-size: 3em;
+        display: block;
+    }
+
+    p {
+        width: 100%;
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    footer {
+        color: #ffffff;
+        background-color: #000;
+    }
+
+    a {
+        color: #ffffff;
+    }
 
 
 }
-
-*/
