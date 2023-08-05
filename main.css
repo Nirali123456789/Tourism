@@ -15,6 +15,11 @@ body {
 
 }
 
+.container-middle {
+    display: inline-block;
+    vertical-align: top;
+  }
+
 .left-bg,
 .center-bg,
 .right-bg {
@@ -83,8 +88,8 @@ h1 {
 
     margin-top: 15px;
     text-align: center;
-    font-size: 15px;
-    font-family: cursive;
+    font-size: 10px;
+    font-family: fantasy;
     color: #000;
 
 
@@ -104,6 +109,7 @@ h4 {
 }
 
 .Main_Contain {
+    margin-top: 10%;
     color: black;
     position: relative;
     height: 100%;
@@ -116,10 +122,7 @@ h4 {
     /* Set the font color for h1 */
 }
 
-.para {
-    display: flex;
-    width: 100%;
-}
+
 
 .section {
     flex-grow: 1;
@@ -161,15 +164,118 @@ h4 {
 .Images {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+
 }
 
 .Images img {
-    width: 25%; /* Set the width as a percentage for medium size */
-      height: auto; /* Maintain the aspect ratio */
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     margin: 0 10px;
+    border-radius: 20px;
 }
+
+.para {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.para p {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 10px;
+}
+
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#MiddleSection {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    text-align: left; 
+    display: inline-block;
+    vertical-align: top;
+}
+
+#MiddleSection h1 {
+    color: #000000;
+    font-weight: bold;
+}
+
+#middle_img {
+    margin: 25px 15px;
+    width: 650px;
+    height: fit-content;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.h4middle
+{
+    text-align: left; 
+}
+.side-section {
+    display: flex;
+  }
+  .section img
+  {
+    width: 10%;
+  }
+h3{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
 
 
 
