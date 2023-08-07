@@ -10,6 +10,30 @@ h2 {
   margin-bottom: 32px;
 }
 
+.logo {
+  max-width: 300px;
+  max-height: 150px;
+  display: block;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+
+
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url('images/logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+
 .clear {
   clear: both;
 }
@@ -45,7 +69,7 @@ body {
 }
 
 .form-row .form-group {
-  width: 50%;
+  width: 100%;
   padding: 0 15px;
 }
 
@@ -114,6 +138,7 @@ label {
 
 
 }
+
 .container {
   background: rgba(220, 218, 218, 0.77);
   float: inline-start;
@@ -212,19 +237,59 @@ select {
 }
 
 @media screen and (min-width: 900px) {
+
+  header {
+    max-width: 200px;
+    max-height: 100px;
+    display: block;
+    text-align: center;
+    display: inline;
+
+
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 35%;
+    float: right;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+    color: white;
+  }
+
+  nav ul {
+    padding: 5px;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+  }
+
+  nav a {
+    color: #ffffff;
+    font: bold 20px Tahoma;
+  }
+
   .container {
     width: 100%;
     max-width: 100%;
+    background-color: #B2A4A3;
+  
   }
 
   .signup-content {
     display: flex;
   }
- 
-.form-row .form-group {
-  width: 100%;
-  padding: 0 15px;
-}
+
+  .form-row .form-group {
+    width: 100%;
+    padding: 0 15px;
+  }
 
   .signup-img,
   .signup-form {
@@ -233,13 +298,13 @@ select {
 
 
   .main {
-
     min-height: 100vh;
     display: flex;
     justify-content: center;
     float: right;
     margin-right: 30px;
     margin-top: 30px;
+    
   }
 
   .main-form {
@@ -253,10 +318,11 @@ select {
 
   }
 
-  .container {
+  /* .container {
     background: rgba(220, 218, 218, 0.77);
     float: inline-start;
-  }
+  } */
+
   label {
     font-size: 14px;
     font-weight: bold;
@@ -264,17 +330,19 @@ select {
     margin-bottom: 2px;
     display: block;
   }
+
   h2 {
     line-height: 1.66;
     margin: 0;
     padding: 0;
     font-weight: 700;
-    color: #222;
+   color: #FFF;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 32px;
   }
+
   .submit {
     width: 140px;
     height: 40px;
