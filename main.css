@@ -452,6 +452,7 @@ a {
 
     nav a {
         color: #ffffff;
+        text-shadow:0 0 5px #809bf5;
         font: bold 20px Tahoma;
     }
 
@@ -688,7 +689,7 @@ aside {
     padding: 30px;
     display: flex;
     background-color: #F1F7FB;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-name: slidein;
 }
 
