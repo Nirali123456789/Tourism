@@ -636,7 +636,7 @@ h4 {
     color: #0d0d0d;
     box-sizing: border-box;
     position: relative;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-name: slidein;
 }
 
@@ -688,6 +688,8 @@ aside {
     padding: 30px;
     display: flex;
     background-color: #F1F7FB;
+    animation-duration: 6s;
+    animation-name: slidein;
 }
 
 .section:hover .text-container {
