@@ -213,17 +213,18 @@ select {
 
 @media screen and (min-width: 900px) {
   .container {
-    width: 65%;
+    width: 100%;
     max-width: 100%;
   }
 
   .signup-content {
     display: flex;
   }
-  .form-group
-  {
-    width: 100%;
-  }
+ 
+.form-row .form-group {
+  width: 100%;
+  padding: 0 15px;
+}
 
   .signup-img,
   .signup-form {
