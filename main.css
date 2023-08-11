@@ -115,10 +115,8 @@ h4 {
     text-align: center;
     position: relative;
     text-align: center;
-    padding: 30px;
     text-align: left;
-    display: inline;
-    vertical-align: top;
+    display: block;
 }
 
 #middle_img {
@@ -126,6 +124,7 @@ h4 {
     width: 100%;
     max-width: 250px;
     height: auto;
+    display: block;
     border-radius: 10px;
     opacity: 0.7;
     transition: transform 0.3s ease-in-out;
@@ -202,7 +201,7 @@ p {
 }
 
 aside {
-    width: 80%;
+    width: 100%;
     margin-top: 25px;
     margin-left: 15px;
     margin-right: 15px;
@@ -384,8 +383,7 @@ a {
 }
 
 #middle_img {
-    margin: 25px 15px;
-    width: 650px;
+    margin:  0 auto;
     height: fit-content;
     border-radius: 10px;
     opacity: 0.7;
@@ -414,6 +412,272 @@ a {
 
 
 
+/* Medium screens - 700px and above - change navigation to horizontal sticky nav */
+@media screen and (min-width: 700px) {
+    header {
+        max-width: 200px;
+        max-height: 100px;
+        display: block;
+        text-align: center;
+        display: inline;
+    }
+    
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 35%;
+        float: right;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 15px;
+        position: relative;
+        color: white;
+    }
+
+    nav ul {
+        padding: 5px;
+        animation: fadeInAnimation 1s ease-in-out forwards;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-shadow: 0 0 5px #809bf5;
+        font: bold 20px Tahoma;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+
+    .left-bg,
+    .center-bg,
+    .right-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .left-bg {
+        left: 0;
+        width: 33.33%;
+    }
+
+    .center-bg {
+        left: 33.33%;
+        width: 33.33%;
+    }
+
+    .right-bg {
+        left: 66.66%;
+        width: 33.33%;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        color: #ffffff;
+        font-size: 3em;
+        display: inline;
+    }
+
+    p {
+        width: 100%;
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    footer {
+        color: #ffffff;
+        background-color: #000;
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    .Main_Contain {
+        margin-top: 10%;
+        color: black;
+        position: relative;
+        height: 100%;
+        display: block;
+    }
+
+    .link {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .link a {
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 28px;
+        font-weight: bolder;
+        color: whitesmoke;
+    }
+
+    .Images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Images img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        margin: 0 10px;
+        border-radius: 20px;
+    }
+
+    .para p {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 10px;
+    }
+
+    #MiddleSection {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        text-align: center;
+        padding: 30px;
+        text-align: left;
+        display: block;
+    }
+
+ 
+    #middle_img {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        height: fit-content;
+        border-radius: 10px;
+        opacity: 0.7;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .container-middle {
+        width: 100%;
+    }
+
+    .h4middle {
+        text-align: left;
+        margin-left: 20px;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    .side-section {
+        display: inline;
+    }
+
+   
+
+    .section {
+        width: 100%;
+        display: inline;
+        padding: 5px;
+        color: #0d0d0d;
+        box-sizing: border-box;
+        position: relative;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    .section p {
+        color: #090707;
+        font-weight: bold;
+        width: 100%;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 10px;
+    }
+
+    .section img {
+        width: 120px;
+        height: 100px;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    h3 {
+        margin: 10px 10px;
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+
+    p {
+        margin: 10px 10px;
+    }
+
+    .text-container {
+        display: block;
+        width: 80%;
+    }
+
+    #date {
+        font-size: 12px;
+        color: #bbbdbe;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    aside {
+        width: 80%;
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        background-color: #F1F7FB;
+        animation-duration: 8s;
+        animation-name: slidein;
+    }
+
+    .section:hover .text-container {
+        background-color: #809bf5;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .text-overlay-bottom {
+        margin: 20px;
+    }
+
+    .text-overlay-bottom p {
+        width: 650px;
+        max-width: 650px;
+        font-size: 15px;
+        margin-left: 20px;
+        opacity: 0;
+        animation: fadeInAnimation 2s ease-in-out forwards;
+    }
+
+    .text-overlay-bottom h2 {
+        margin-left: 20px;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+}
 
 
 
@@ -596,14 +860,13 @@ h4 {
 
 
 #middle_img {
-    margin: 25px 15px;
-    width: 50%;
-    max-width: 650px;
+    margin: 25px auto;
     height: fit-content;
     border-radius: 10px;
     opacity: 0.7;
 
-    transition: transform 0.3s ease-in-out;
+
+transition: transform 0.3s ease-in-out;
 
 }
 

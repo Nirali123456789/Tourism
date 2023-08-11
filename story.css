@@ -6,7 +6,7 @@ body {
 h1
 {
     color: #fff;
-    text-shadow:0 0 5px #809bf5;
+    text-shadow:0 0 5px hsl(249, 85%, 73%);
 }
 .container-middle {
     display: inline-block;
@@ -181,7 +181,17 @@ aside {
         opacity: 1;
     }
 }
-
+nav li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+    color: white;
+}
+nav a {
+    color: #fff;
+    text-shadow:0 0 5px hsl(249, 85%, 73%);
+    font: bold 15px Tahoma;
+}
 @media screen and (min-width: 900px) {
 
     header {
