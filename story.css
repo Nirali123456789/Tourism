@@ -190,7 +190,7 @@ nav li {
 nav a {
     color: #fff;
     text-shadow:0 0 5px hsl(249, 85%, 73%);
-    font: bold 15px Tahoma;
+    font: bold 12px Tahoma;
 }
 @media screen and (min-width: 900px) {
 
